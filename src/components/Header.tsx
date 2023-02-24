@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import "./Header.css";
@@ -6,11 +7,20 @@ import SocialMedia from "./SocialMedia";
 const Header = () => {
   return (
     <div className="Header">
-      <p className="logo">airWrks</p>
+      <Link to={"/"}>
+        {" "}
+        <img src="/src/assets/airWrksLogo.png" alt="airWrks-Logo" />
+      </Link>
       <ul>
-        <a href="">{<About />}</a>
+        <Link to={"/about"}>
+          {" "}
+          <a href="">{<About />}</a>
+        </Link>
         <a href="">{<SocialMedia />}</a>
-        <a href="">{<Contact />}</a>
+        <Link to={""}>
+          {" "}
+          <a href="">{<Contact />}</a>
+        </Link>
       </ul>
     </div>
   );
