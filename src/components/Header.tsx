@@ -9,19 +9,22 @@ const Header = () => {
     <div className="Header">
       <Link to={"/"}>
         {" "}
-        <img src="/src/assets/airWrksLogo.png" alt="airWrks-Logo" />
+        {/* //need to make logo image for airWrks not final logo image. */}
+        <img src={"/assets/airWrksLogo.png"} alt="airWrks-Logo" />
       </Link>
-      <ul>
-        <Link to={"/about"}>
-          {" "}
-          <a href="">{<About />}</a>
-        </Link>
-        <a href="">{<SocialMedia />}</a>
-        <Link to={""}>
-          {" "}
-          <a href="">{<Contact />}</a>
-        </Link>
-      </ul>
+      <nav className="header-nav">
+        <ul>
+          <Link to={"/about"}>
+            {" "}
+            <a href="">{<About />}</a>
+          </Link>
+          <a href="">{<SocialMedia />}</a>
+          <Link to={""}>
+            {" "}
+            <a href="">{<Contact />}</a>
+          </Link>
+        </ul>
+      </nav>
     </div>
   );
 };
