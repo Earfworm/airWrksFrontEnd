@@ -1,7 +1,7 @@
 import "./SocialMedia.css";
 
 const SocialMedia = () => {
-  return <div className="SocialMedia">SocialMedia works</div>;
+  return <div className="SocialMedia"></div>;
 };
 
 export default SocialMedia;

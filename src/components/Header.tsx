@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import About from "./About";
-import Contact from "./Contact";
+
 import "./Header.css";
-import SocialMedia from "./SocialMedia";
 
 const Header = () => {
   return (
@@ -15,13 +13,11 @@ const Header = () => {
       <nav className="header-nav">
         <ul>
           <Link to={"/about"}>
-            {" "}
-            <a href="">{<About />}</a>
+            <div className="play"></div>
           </Link>
-          <a href="">{<SocialMedia />}</a>
+          <div className="stop"></div>
           <Link to={""}>
-            {" "}
-            <a href="">{<Contact />}</a>
+            <div className="record"></div>
           </Link>
         </ul>
       </nav>
