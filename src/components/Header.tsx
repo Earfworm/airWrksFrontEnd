@@ -13,7 +13,9 @@ const Header = () => {
           <Link to={"/about"}>
             <div className="play"></div>
           </Link>
-          <div className="stop"></div>
+          <a href="https://www.linkedin.com/in/deshawnreid/">
+            <div className="stop"></div>
+          </a>
           <Link to={""}>
             <div className="record"></div>
           </Link>
