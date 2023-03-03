@@ -11,13 +11,19 @@ const Header = () => {
       <nav className="header-nav">
         <ul>
           <Link to={"/about"}>
-            <div className="play"></div>
+            <div className="play">
+              <p className="about-p">About</p>
+            </div>
           </Link>
           <a href="https://www.linkedin.com/in/deshawnreid/">
-            <div className="stop"></div>
+            <div className="stop">
+              <p className="social-p">Social</p>
+            </div>
           </a>
           <Link to={""}>
-            <div className="record"></div>
+            <div className="record">
+              <p className="contact-p">Contact</p>
+            </div>
           </Link>
         </ul>
       </nav>

@@ -36,6 +36,9 @@
 }
 
 .Header .header-nav ul .play:hover {
+  border-top: 30px solid transparent;
+  border-left: 35px solid #87e628;
+  border-bottom: 30px solid transparent;
 }
 
 .Header .header-nav ul .stop {
@@ -47,6 +50,8 @@
 }
 
 .Header .header-nav ul .stop:hover {
+  height: 35px;
+  width: 35px;
 }
 
 .Header .header-nav ul .record {
@@ -59,4 +64,29 @@
 }
 
 .Header .header-nav ul .record:hover {
+  height: 35px;
+  width: 35px;
+}
+
+.Header p {
+  display: none;
+}
+
+.play:hover .about-p {
+  position: absolute;
+  display: flex;
+  color: #f2f4f1;
+}
+.stop:hover .social-p {
+  position: absolute;
+  display: flex;
+  color: #f2f4f1;
+  top: 35px;
+}
+.record:hover .contact-p {
+  position: absolute;
+  display: flex;
+  color: #f2f4f1;
+  right: 2px;
+  top: 30px;
 }
