@@ -76,12 +76,13 @@
   position: absolute;
   display: flex;
   color: #f2f4f1;
+  right: -20px;
 }
 .stop:hover .social-p {
   position: absolute;
   display: flex;
   color: #f2f4f1;
-  top: 35px;
+  top: -25px;
 }
 .record:hover .contact-p {
   position: absolute;
