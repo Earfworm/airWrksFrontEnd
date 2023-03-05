@@ -1,4 +1,7 @@
 .Main {
   background-color: #1b419e;
-  height: 86%;
+  width: 100%;
+  height: 86vh;
+  overflow: hidden;
+  display: flex;
 }
