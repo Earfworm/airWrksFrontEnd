@@ -1,6 +1,14 @@
-Body {
-  height: 100%;
+* {
   padding: 0px;
   margin: 0px;
+}
+
+Body {
+  height: 100vh;
+
   box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
 }

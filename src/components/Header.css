@@ -35,23 +35,12 @@
   bottom: 5px;
 }
 
-.Header .header-nav ul .play:hover {
-  border-top: 30px solid transparent;
-  border-left: 35px solid #87e628;
-  border-bottom: 30px solid transparent;
-}
-
 .Header .header-nav ul .stop {
   height: 25px;
   width: 25px;
   border: 2px #f1faee solid;
   margin-left: 5px;
   background-color: #f1faee;
-}
-
-.Header .header-nav ul .stop:hover {
-  height: 35px;
-  width: 35px;
 }
 
 .Header .header-nav ul .record {
@@ -63,31 +52,47 @@
   background-color: #b21e35;
 }
 
-.Header .header-nav ul .record:hover {
-  height: 35px;
-  width: 35px;
-}
-
 .Header p {
   display: none;
 }
 
-.play:hover .about-p {
-  position: absolute;
-  display: flex;
-  color: #f2f4f1;
-  right: -20px;
-}
-.stop:hover .social-p {
-  position: absolute;
-  display: flex;
-  color: #f2f4f1;
-  top: -25px;
-}
-.record:hover .contact-p {
-  position: absolute;
-  display: flex;
-  color: #f2f4f1;
-  right: 2px;
-  top: 30px;
+@media only screen and (min-width: 368px) {
+  .Header .header-nav ul .play:hover {
+    border-top: 30px solid transparent;
+    border-left: 35px solid #87e628;
+    border-bottom: 30px solid transparent;
+  }
+
+  .Header .header-nav ul .stop:hover {
+    height: 35px;
+    width: 35px;
+  }
+
+  .Header .header-nav ul .record:hover {
+    height: 35px;
+    width: 35px;
+  }
+
+  .play:hover .about-p {
+    position: absolute;
+    display: flex;
+    color: #f2f4f1;
+    right: -20px;
+    z-index: 10;
+  }
+  .stop:hover .social-p {
+    position: absolute;
+    display: flex;
+    color: #1b419e;
+    top: 1em;
+    z-index: 10;
+  }
+  .record:hover .contact-p {
+    position: absolute;
+    display: flex;
+    color: #f2f4f1;
+    right: 2px;
+    top: 1em;
+    z-index: 10;
+  }
 }
