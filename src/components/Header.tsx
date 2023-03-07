@@ -20,7 +20,7 @@ const Header = () => {
               <p className="social-p">Social</p>
             </div>
           </a>
-          <Link to={""}>
+          <Link to={"/contact"}>
             <div className="record">
               <p className="contact-p">Contact</p>
             </div>
