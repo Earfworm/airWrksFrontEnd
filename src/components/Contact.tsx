@@ -1,6 +1,11 @@
+import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
+  const [inputName, setInputName] = useState("");
+  const [inputContactInfo, setInputContactInfo] = useState("");
+  const [inputMessage, setInputMessage] = useState("");
+
   return (
     <form className="Contact">
       <label className="name">Name</label>
