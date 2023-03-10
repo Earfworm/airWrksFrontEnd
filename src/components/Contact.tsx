@@ -9,17 +9,34 @@ const Contact = () => {
   return (
     <form className="Contact">
       <label className="name">Name</label>
-      <input type="text" id="name" name="name" value="" onChange={} />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        value=""
+        onChange={(e) => {
+          setInputName(e.target.value);
+        }}
+      />
       <label className="contact">Contact Info</label>
       <input
         type="text"
         id="contact"
         name="contact"
         value="How would like to be contacted?"
-        onChange={}
+        onChange={(e) => {
+          setInputContactInfo(e.target.value);
+        }}
       />
       <label className="message">Leave a Message</label>
-      <input type="text" id="message" name="message" value="" onChange={} />
+      <textarea
+        id="message"
+        name="message"
+        value=""
+        onChange={(e) => {
+          setInputMessage(e.target.value);
+        }}
+      />
     </form>
   );
 };
