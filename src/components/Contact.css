@@ -1,1 +1,21 @@
+.Contact {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
 
+.Contact label {
+  margin: 5px 0px;
+}
+.Contact input {
+  margin-top: 10px;
+}
+
+.Contact textarea {
+}
+
+.Contact button {
+  display: flex;
+}

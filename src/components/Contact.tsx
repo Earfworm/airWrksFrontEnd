@@ -8,27 +8,29 @@ const Contact = () => {
 
   return (
     <form className="Contact">
-      <label className="name">Name</label>
+      <label className="name">Name:</label>
       <input
         type="text"
         id="name"
         name="name"
         value=""
+        placeholder="name"
         onChange={(e) => {
           setInputName(e.target.value);
         }}
       />
-      <label className="contact">Contact Info</label>
+      <label className="contact">Contact Info:</label>
       <input
         type="text"
         id="contact"
         name="contact"
-        value="How would like to be contacted?"
+        value={inputContactInfo}
+        placeholder="email"
         onChange={(e) => {
           setInputContactInfo(e.target.value);
         }}
       />
-      <label className="message">Leave a Message</label>
+      <label className="message">Leave a Message:</label>
       <textarea
         id="message"
         name="message"
@@ -37,6 +39,7 @@ const Contact = () => {
           setInputMessage(e.target.value);
         }}
       />
+      <button>Submit</button>
     </form>
   );
 };
