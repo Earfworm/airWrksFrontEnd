@@ -34,7 +34,7 @@ const Contact = () => {
       <textarea
         id="message"
         name="message"
-        value=""
+        value={inputMessage}
         onChange={(e) => {
           setInputMessage(e.target.value);
         }}
