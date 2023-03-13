@@ -35,6 +35,8 @@ const Contact = () => {
         id="message"
         name="message"
         value={inputMessage}
+        cols={30}
+        rows={10}
         onChange={(e) => {
           setInputMessage(e.target.value);
         }}
