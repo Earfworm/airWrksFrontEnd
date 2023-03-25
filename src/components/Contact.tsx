@@ -3,67 +3,74 @@ import ContactAirWrks from "../models/ContactAirWrks";
 import { addNewContact } from "../services/ContactAirWrksService";
 import "./Contact.css";
 
-interface propsObj {
-  addContact: (nC: ContactAirWrks) => void;
+interface Props {
+  addContact: (contact: ContactAirWrks) => void;
 }
 
-const Contact = ({ addContact }: propsObj) => {
-  const [inputName, setInputName] = useState("");
-  const [inputEmail, setInputEmail] = useState("");
-  const [inputMessage, setInputMessage] = useState("");
+const Contact = ({ addContact }: Props) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
 
-  const submitHandler = (e: FormEvent) => {
-    //prevent page refresh
+  const submitHandler = async (e: FormEvent) => {
     e.preventDefault();
 
-    const inputContact: ContactAirWrks = {
-      name: inputName,
-      email: inputEmail,
-      message: inputMessage,
+    const contact: ContactAirWrks = {
+      name,
+      email,
+      message,
     };
-    addContact(inputContact);
-    //clear form:
-    setInputName("");
-    setInputEmail("");
-    setInputMessage("");
+
+    try {
+      const newContact = await addNewContact(contact);
+      addContact(newContact);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setError("");
+    } catch (error) {
+      setError("Error saving contact");
+    }
   };
 
   return (
     <form className="Contact" onSubmit={submitHandler}>
-      <label className="name">Name:</label>
+      {error && <div className="error">{error}</div>}
+      <label htmlFor="name">Name:</label>
       <input
         type="text"
         id="name"
         name="name"
-        value={inputName}
+        value={name}
         placeholder="name"
         onChange={(e) => {
-          setInputName(e.target.value);
+          setName(e.target.value);
         }}
       />
-      <label className="contact">Email:</label>
+      <label htmlFor="email">Email:</label>
       <input
         type="text"
-        id="contact"
-        name="contact"
-        value={inputEmail}
+        id="email"
+        name="email"
+        value={email}
         placeholder="email"
         onChange={(e) => {
-          setInputEmail(e.target.value);
+          setEmail(e.target.value);
         }}
       />
-      <label className="message">Leave a Message:</label>
+      <label htmlFor="message">Leave a Message:</label>
       <textarea
         id="message"
         name="message"
-        value={inputMessage}
+        value={message}
         cols={30}
         rows={10}
         onChange={(e) => {
-          setInputMessage(e.target.value);
+          setMessage(e.target.value);
         }}
       />
-      <button>Submit</button>
+      <button type="submit">Submit</button>
     </form>
   );
 };

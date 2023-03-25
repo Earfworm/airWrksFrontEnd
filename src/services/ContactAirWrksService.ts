@@ -7,7 +7,7 @@ export const addNewContact = (
   newContact: ContactAirWrks
 ): Promise<ContactAirWrks> => {
   return axios
-    .post(`${baseUrl}/ContactAirWrks`, newContact)
+    .post(`${baseUrl}/contactAirWrks`, newContact)
     .then((res) => res.data)
     .catch((error) => {
       console.log(error);
