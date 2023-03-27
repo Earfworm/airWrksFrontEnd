@@ -3,6 +3,7 @@ import ContactAirWrks from "../models/ContactAirWrks";
 
 const baseUrl: string = process.env.REACT_APP_API_URL || "";
 
+//Post request with node express
 export const addNewContact = (
   newContact: ContactAirWrks
 ): Promise<ContactAirWrks> => {

@@ -1,3 +1,21 @@
 .About {
+  display: flex;
+  align-items: center;
   height: 80%;
+  margin: 0px 10px;
+}
+
+.About p {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  padding: 0px 10px;
+  color: #f1faee;
+  background-color: #0094d8;
+  border-radius: 4%;
+  box-shadow: 5.8px 3.1px 2px -14px rgba(0, 0, 0, 0.06),
+    46px 25px 16px -14px rgba(0, 0, 0, 0.12);
+  text-shadow: #474747 2px 3px 1px;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.1rem;
 }
