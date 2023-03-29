@@ -14,42 +14,25 @@
   color: #000000;
 }
 
+/*This is the nav, and ul, for devices with a min-width of 368px */
 .Header .header-nav {
-  position: relative;
-  left: 30%;
+  display: none;
 }
 
 .Header .header-nav ul {
-  display: flex;
-  margin: 10px 0 0 0;
-  padding: 0;
+  display: none;
 }
 
 .Header .header-nav ul .play {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-left: 25px solid #70e000;
-  border-bottom: 20px solid transparent;
-  position: relative;
-  bottom: 5px;
+  display: none;
 }
 
 .Header .header-nav ul .stop {
-  height: 25px;
-  width: 25px;
-  border: 2px #f1faee solid;
-  margin-left: 5px;
-  background-color: #f1faee;
+  display: none;
 }
 
 .Header .header-nav ul .record {
-  height: 25px;
-  width: 25px;
-  border: 2px #b21e35 solid;
-  border-radius: 76%;
-  margin-left: 5px;
-  background-color: #b21e35;
+  display: none;
 }
 
 .Header p {
