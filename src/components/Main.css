@@ -1,2 +1,8 @@
 .Main {
+  position: relative;
+}
+
+.Main p {
+  position: relative;
+  bottom: -100px;
 }

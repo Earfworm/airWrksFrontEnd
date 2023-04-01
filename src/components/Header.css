@@ -1,8 +1,11 @@
 .Header {
   display: flex;
+  position: fixed;
+  top: 0;
   flex-direction: row;
   align-items: center;
   background-color: #0094d8;
+  width: 100%;
 }
 
 .Header a {
@@ -13,10 +16,10 @@
   margin-left: 10px;
   color: #000000;
 }
-
+/*https://codepen.io/shieldsma91/pen/zLpbLX hamburger menu example
 /*This is the nav, and ul, for devices with a min-width of 368px */
 .Header .header-nav {
-  display: none;
+  display: flex;
 }
 
 .Header .header-nav ul {
