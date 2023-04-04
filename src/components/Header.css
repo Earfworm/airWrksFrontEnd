@@ -2,10 +2,11 @@
   display: flex;
   position: fixed;
   top: 0;
+  width: 100%;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   background-color: #0094d8;
-  width: 100%;
 }
 
 .Header a {
@@ -20,41 +21,93 @@
 /*This is the nav, and ul, for devices with a min-width of 368px */
 .Header .header-nav {
   display: flex;
+  padding: 10px;
 }
 
-.Header .header-nav ul {
-  display: none;
+.Header .header-nav #navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 41px;
+  right: -205px;
+  width: 205px;
+  height: 50%;
+  background-color: #0094d8;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  padding: 10px 0 0 10px;
+  transition: 0.3s ease-in-out;
+}
+.Header .header-nav #navbar.active {
+  right: 0px;
 }
 
-.Header .header-nav ul .play {
-  display: none;
+.Header .header-nav #navbar .play {
+  display: flex;
 }
 
-.Header .header-nav ul .stop {
-  display: none;
+.Header .header-nav #navbar .stop {
+  display: flex;
 }
 
-.Header .header-nav ul .record {
-  display: none;
+.Header .header-nav #navbar .record {
+  display: flex;
 }
 
 .Header p {
-  display: none;
+  display: flex;
+  padding: 5px;
+  color: #f2f4f1;
+  font-weight: 600;
+  font-family: "Patrick Hand SC", cursive;
+  transition: 0.3s ease-in-out;
+}
+
+.Header p:hover {
+  color: #1b419e;
+}
+#mobile {
+  display: block;
+}
+#mobile i {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 368px) {
-  .Header .header-nav ul .play:hover {
+  .Header .header-nav {
+    display: flex;
+    padding: 10px;
+  }
+  .Header .header-nav #navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: none;
+
+    box-shadow: none;
+    padding: 10px;
+    transition: none;
+  }
+  .Header .header-nav #navbar .play:hover {
     border-top: 30px solid transparent;
     border-left: 35px solid #87e628;
     border-bottom: 30px solid transparent;
   }
 
-  .Header .header-nav ul .stop:hover {
+  .Header .header-nav #navbar .stop:hover {
     height: 35px;
     width: 35px;
   }
 
-  .Header .header-nav ul .record:hover {
+  .Header .header-nav #navbar .record:hover {
     height: 35px;
     width: 35px;
   }
@@ -80,5 +133,8 @@
     right: 2px;
     top: 1em;
     z-index: 10;
+  }
+  #mobile {
+    display: none;
   }
 }
