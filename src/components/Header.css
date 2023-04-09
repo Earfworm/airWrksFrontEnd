@@ -17,8 +17,7 @@
   margin-left: 10px;
   color: #000000;
 }
-/*https://codepen.io/shieldsma91/pen/zLpbLX hamburger menu example
-/*This is the nav, and ul, for devices with a min-width of 368px */
+
 .Header .header-nav {
   display: flex;
   padding: 10px;
@@ -97,9 +96,8 @@
     transition: none;
   }
   .Header .header-nav #navbar .play:hover {
-    border-top: 30px solid transparent;
-    border-left: 35px solid #87e628;
-    border-bottom: 30px solid transparent;
+    height: 35px;
+    width: 35px;
   }
 
   .Header .header-nav #navbar .stop:hover {
@@ -115,8 +113,8 @@
   .play:hover .about-p {
     position: absolute;
     display: flex;
-    color: #f2f4f1;
-    right: -20px;
+    color: #1b419e;
+    top: 1em;
     z-index: 10;
   }
   .stop:hover .social-p {
@@ -129,7 +127,7 @@
   .record:hover .contact-p {
     position: absolute;
     display: flex;
-    color: #f2f4f1;
+    color: #1b419e;
     right: 2px;
     top: 1em;
     z-index: 10;
