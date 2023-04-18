@@ -90,7 +90,6 @@
     top: 0;
     right: 0;
     width: none;
-
     box-shadow: none;
     padding: 10px;
     transition: none;
@@ -115,14 +114,12 @@
     display: flex;
     color: #1b419e;
     top: 1em;
-    z-index: 10;
   }
   .stop:hover .social-p {
     position: absolute;
     display: flex;
     color: #1b419e;
     top: 1em;
-    z-index: 10;
   }
   .record:hover .contact-p {
     position: absolute;
@@ -130,7 +127,6 @@
     color: #1b419e;
     right: 2px;
     top: 1em;
-    z-index: 10;
   }
   #mobile {
     display: none;
