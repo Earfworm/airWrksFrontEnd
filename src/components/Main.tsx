@@ -6,7 +6,7 @@ interface ComponentProps {}
 const Main = () => {
   return (
     <div className="Main">
-      <p>
+      <p id="beatsRhymeCodeLife">
         <span id="beats-span">beats</span>
         <span id="rhymes-span">Rhymes</span>
         <span id="code-span">Code</span>
