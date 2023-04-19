@@ -13,6 +13,11 @@
 .Header a {
   text-decoration: none;
 }
+
+.Header .header-nav #navbar a:hover {
+  background-color: #a3d3ea;
+}
+
 .Header .header-logo {
   font-family: "Audiowide", cursive;
   margin-left: 10px;

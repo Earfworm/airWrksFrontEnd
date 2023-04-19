@@ -1,8 +1,51 @@
 .Main {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .Main p {
   position: relative;
-  bottom: -100px;
+  bottom: 25%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: #f2f4f1;
+  font-family: "Delicious Handrawn", cursive;
+}
+
+.Main span {
+  opacity: 0;
+  animation: word-fade-in 1s ease-in-out forwards;
+}
+
+@keyframes word-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#beats-span {
+  animation-delay: 0s;
+}
+
+#rhymes-span {
+  animation-delay: 0.8s;
+}
+
+#code-span {
+  animation-delay: 1.4s;
+}
+
+#life-span {
+  animation-delay: 2s;
 }
