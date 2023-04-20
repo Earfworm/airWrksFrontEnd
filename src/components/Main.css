@@ -13,9 +13,10 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #f2f4f1;
   font-family: "Delicious Handrawn", cursive;
+  animation-delay: 2.1;
   text-shadow: 5px 5px 3px #000, 6px 30px 3px #57ef57, 5px 55px 3px #c06cbd,
     5px -14px 3px #c61717, 5px -37px 3px rgba(251, 255, 0, 0.769),
     5px 10px 3px #000;
