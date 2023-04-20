@@ -16,10 +16,41 @@
   font-size: 2.5rem;
   color: #f2f4f1;
   font-family: "Delicious Handrawn", cursive;
-  animation-delay: 2.1;
-  text-shadow: 5px 5px 3px #000, 6px 30px 3px #57ef57, 5px 55px 3px #c06cbd,
-    5px -14px 3px #c61717, 5px -37px 3px rgba(251, 255, 0, 0.769),
-    5px 10px 3px #000;
+  text-shadow: 5px 5px 3px #000;
+  /* for making text shadows move */
+  animation-name: shadow-move;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* text shadow animation */
+@keyframes shadow-move {
+  0% {
+    text-shadow: 5px 5px 3px #000, 6px 30px 3px #57ef57, 5px 55px 3px #c06cbd,
+      5px -14px 3px #c61717, 5px -37px 3px rgba(251, 255, 0, 0.769),
+      5px 10px 3px #000;
+  }
+  25% {
+    text-shadow: 10px 10px 6px #000, 12px 60px 6px #57ef57,
+      10px 110px 6px #c06cbd, 10px -28px 6px #c61717,
+      10px -74px 6px rgba(251, 255, 0, 0.769), 10px 20px 6px #000;
+  }
+  50% {
+    text-shadow: 5px 5px 3px #000, 6px 30px 3px #57ef57, 5px 55px 3px #c06cbd,
+      5px -14px 3px #c61717, 5px -37px 3px rgba(251, 255, 0, 0.769),
+      5px 10px 3px #000;
+  }
+  75% {
+    text-shadow: -5px -5px 3px #000, -6px -30px 3px #57ef57,
+      -5px -55px 3px #c06cbd, -5px 14px 3px #c61717,
+      -5px 37px 3px rgba(251, 255, 0, 0.769), -5px -10px 3px #000;
+  }
+  100% {
+    text-shadow: 5px 5px 3px #000, 6px 30px 3px #57ef57, 5px 55px 3px #c06cbd,
+      5px -14px 3px #c61717, 5px -37px 3px rgba(251, 255, 0, 0.769),
+      5px 10px 3px #000;
+  }
 }
 
 .Main span {
@@ -43,13 +74,13 @@
 }
 
 #rhymes-span {
-  animation-delay: 0.8s;
+  animation-delay: 1.2s;
 }
 
 #code-span {
-  animation-delay: 1.4s;
+  animation-delay: 2s;
 }
 
 #life-span {
-  animation-delay: 2s;
+  animation-delay: 3s;
 }

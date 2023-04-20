@@ -1,8 +1,5 @@
 import "./Main.css";
-import Sketch from "react-p5";
-import p5Types from "p5";
 
-interface ComponentProps {}
 const Main = () => {
   return (
     <div className="Main">

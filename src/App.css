@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .App {
-  height: 100vh;
-  background-color: #1b419e;
-} */
 
 @keyframes move-it {
   0% {
@@ -27,5 +23,5 @@
     #3264e0 10%
   );
   background-size: 100px 100px;
-  animation: move-it 3s linear infinite;
+  animation: move-it 7s linear infinite;
 }
