@@ -5,15 +5,16 @@
   height: 100vh;
 }
 
-.Main p {
+.Main #beatsRhymeCodeLife {
   position: relative;
-  bottom: 25%;
+  bottom: 30%;
+  right: 15%;
   display: flex;
   justify-content: start;
   align-items: center;
   margin: 0;
   padding: 0;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   color: #f2f4f1;
   font-family: "Delicious Handrawn", cursive;
   text-shadow: 5px 5px 3px #000;
@@ -90,7 +91,7 @@
   align-items: center;
   position: absolute;
   right: 12%;
-  bottom: 20%;
+  bottom: 27%;
   height: 200px;
   width: 275px;
   background-color: #4a4e69;
@@ -98,6 +99,7 @@
 
 .Main .beatMachine .innerShell {
   display: flex;
+  flex-direction: column;
   height: 150px;
   width: 238px;
   background-color: #c9ada7;
@@ -118,8 +120,63 @@
 
   position: relative;
   font-family: "Audiowide", cursive;
-  color: #57ef57;
+  color: rgb(87, 239, 87);
+
   font-size: 8px;
   text-align: center;
   top: 15%;
+}
+
+.Main .beatMachine .innerShell .rows {
+  display: flex;
+  height: 30px;
+  margin-bottom: 5px;
+  position: relative;
+  top: 30%;
+}
+
+.Main .beatMachine .innerShell .volume,
+.Main .beatMachine .innerShell .pan {
+  background-color: #9a8c98;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  margin-left: 5px;
+  position: relative;
+  top: -2%;
+}
+
+.Main .beatMachine .innerShell .channel {
+  background-color: #9a8c98;
+  height: 20px;
+  width: 25px;
+  margin-left: 5px;
+
+  position: relative;
+  top: -5%;
+}
+
+.Main .beatMachine .innerShell .channel p {
+  display: flex;
+  justify-content: center;
+  font-size: 8px;
+  text-align: center;
+}
+.Main .beatMachine .innerShell .channel #kick,
+.Main .beatMachine .innerShell .channel #snare {
+  display: flex;
+  justify-content: center;
+  font-size: 8px;
+  text-align: center;
+  position: relative;
+  top: 15%;
+}
+
+.Main .beatMachine .innerShell .step {
+  background-color: #9a8c98;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+  position: relative;
+  top: -10%;
 }
