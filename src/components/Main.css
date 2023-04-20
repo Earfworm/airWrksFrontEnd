@@ -107,24 +107,23 @@
   left: 6%;
 }
 .Main .beatMachine .innerShell #info-box {
-  height: 15%;
-
+  height: 27px;
+  width: 110px;
   position: absolute;
-  top: 7%;
+  top: 5%;
   left: 6%;
   background-color: #f2e9e4;
 }
 
 .Main .beatMachine .innerShell #info-box h3 {
   display: flex;
-
   position: relative;
-  font-family: "Audiowide", cursive;
+  font-family: "DotGothic16", sans-serif;
   color: rgb(87, 239, 87);
-
   font-size: 8px;
   text-align: center;
   top: 15%;
+  left: 5px;
 }
 
 .Main .beatMachine .innerShell .rows {
