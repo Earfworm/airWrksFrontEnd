@@ -84,3 +84,42 @@
 #life-span {
   animation-delay: 3s;
 }
+
+.Main .beatMachine {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 12%;
+  bottom: 20%;
+  height: 200px;
+  width: 275px;
+  background-color: #4a4e69;
+}
+
+.Main .beatMachine .innerShell {
+  display: flex;
+  height: 150px;
+  width: 238px;
+  background-color: #c9ada7;
+  position: relative;
+  left: 6%;
+}
+.Main .beatMachine .innerShell #info-box {
+  height: 15%;
+
+  position: absolute;
+  top: 7%;
+  left: 6%;
+  background-color: #f2e9e4;
+}
+
+.Main .beatMachine .innerShell #info-box h3 {
+  display: flex;
+
+  position: relative;
+  font-family: "Audiowide", cursive;
+  color: #57ef57;
+  font-size: 8px;
+  text-align: center;
+  top: 15%;
+}
