@@ -5,38 +5,28 @@
   height: 100vh;
 }
 
+.Main #beatsRhymesCodeLife-container {
+  position: relative;
+  bottom: 30%;
+}
+
 .Main #beatsRhymeCodeLife {
   position: relative;
   top: 4%;
-  width: 12em;
-  height: 3em;
   margin: 0 auto;
-  bottom: 27%;
   display: flex;
   justify-content: start;
   align-items: center;
   font-size: 1.6rem;
   color: #f2f4f1;
   font-family: "Delicious Handrawn", cursive;
-  text-shadow: 5px 5px 3px #000, 6px 30px 3px #57ef57, 5px 55px 3px #c06cbd,
-    5px -14px 3px #c61717, 5px -37px 3px rgba(251, 255, 0, 0.769),
-    5px 10px 3px #000;
-  animation: spin 7s linear infinite;
+  text-shadow: 5px 5px 3px #000;
+
   /* for making text shadows move  */
   animation-name: shadow-move;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation: spin 7s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* text shadow animation  */
@@ -69,18 +59,11 @@
 }
 
 .Main #beatsRhymeCodeLife span {
-  /* opacity: 0; */
+  opacity: 0;
   animation: word-fade-in 1s ease-in-out forwards;
-  display: block;
-  position: absolute;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 2em;
 }
 
-/* @keyframes word-fade-in {
+@keyframes word-fade-in {
   0% {
     opacity: 0;
     transform: translateY(10px);
@@ -89,34 +72,25 @@
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 
 #beats-span {
-  /* animation-delay: 0s; */
-  top: -41%;
-  left: 50%;
-  transform: translate(-50%, -4em);
+  animation-delay: 0s;
 }
 
 #rhymes-span {
-  /* animation-delay: 1.2s; */
-  top: 50%;
-  left: 127%;
-  transform: translate(-4em, -50%);
+  animation-delay: 1.2s;
 }
 
 #code-span {
-  /* animation-delay: 2s; */
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, 4em);
+  animation-delay: 2s;
 }
 
 #life-span {
-  /* animation-delay: 3s; */
-  top: 50%;
-  left: -158px;
-  transform: translate(4em, -50%);
+  animation-delay: 3s;
+}
+
+#beatMachine-Container {
 }
 
 .Main .beatMachine {
@@ -124,7 +98,7 @@
   align-items: center;
   position: absolute;
   right: 12%;
-  bottom: 27%;
+  bottom: 30%;
   height: 200px;
   width: 275px;
   background-color: #4a4e69;
@@ -216,8 +190,56 @@
 @media only screen and (min-width: 368px) {
   .Main #beatsRhymeCodeLife {
     font-size: 1.7rem;
-    bottom: 10%;
+    bottom: 9%;
     left: -20%;
+    position: relative;
+    width: 12em;
+    height: 3em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #f2f4f1;
+    font-family: "Delicious Handrawn", cursive;
+    text-shadow: 5px 5px 3px #000, 6px 30px 3px #57ef57, 5px 55px 3px #c06cbd,
+      5px -14px 3px #c61717, 5px -37px 3px rgba(251, 255, 0, 0.769),
+      5px 10px 3px #000;
+    animation: spin 7s cubic-bezier(0.47, 0, 0.75, 0.72) infinite;
+  }
+
+  .Main #beatsRhymeCodeLife span {
+    /* opacity: 0; */
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2em;
+  }
+
+  #beats-span {
+    top: -41%;
+    left: 50%;
+    transform: translate(-50%, -4em);
+  }
+
+  #rhymes-span {
+    top: 85%;
+    left: 110%;
+    transform: translate(-4em, -50%);
+  }
+
+  #code-span {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 4em);
+  }
+
+  #life-span {
+    top: 50%;
+    left: -158px;
+    transform: translate(4em, -50%);
   }
 
   .Main .beatMachine {
