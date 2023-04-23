@@ -229,25 +229,25 @@
 
   #rhymes-span {
     top: -58%;
-    left: 38%;
+    left: 33%;
     transform: translate(-4em, -50%);
   }
 
   #code-span {
     top: 45%;
-    left: 110%;
+    left: 106%;
 
     transform: translate(-50%, 4em);
   }
 
   #life-span {
     top: 139%;
-    left: 41%;
+    left: 36%;
     transform: translate(4em, -50%);
   }
 
   .Main .beatMachine {
-    right: 36.5%;
+    right: 40.5%;
   }
 
   .Main .beatMachine .innerShell {
