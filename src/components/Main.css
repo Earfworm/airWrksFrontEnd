@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+Main #container {
+  display: none;
+}
+
 .Main #beatsRhymesCodeLife-container {
   position: relative;
   bottom: 30%;
@@ -189,61 +193,7 @@
 
 @media only screen and (min-width: 368px) {
   .Main #beatsRhymesCodeLife-container {
-    position: relative;
-    top: 0%;
-  }
-  .Main #beatsRhymeCodeLife {
-    font-size: 1.7rem;
-    left: 0%;
-    position: relative;
-    width: 12em;
-    height: 6em;
-    margin: 0 auto;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    color: #f2f4f1;
-    font-family: "Delicious Handrawn", cursive;
-    text-shadow: 5px 5px 3px #000, 6px 30px 3px #57ef57, 5px 55px 3px #c06cbd,
-      5px -14px 3px #c61717, 5px -37px 3px rgba(251, 255, 0, 0.769),
-      5px 10px 3px #000;
-    /* animation: spin 7s cubic-bezier(0.47, 0, 0.75, 0.72) infinite; */
-  }
-
-  .Main #beatsRhymeCodeLife span {
-    /* opacity: 0; */
-    display: block;
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 2em;
-  }
-
-  #beats-span {
-    top: 45%;
-    left: -106px;
-    transform: translate(-50%, -4em);
-  }
-
-  #rhymes-span {
-    top: -58%;
-    left: 33%;
-    transform: translate(-4em, -50%);
-  }
-
-  #code-span {
-    top: 45%;
-    left: 106%;
-
-    transform: translate(-50%, 4em);
-  }
-
-  #life-span {
-    top: 139%;
-    left: 36%;
-    transform: translate(4em, -50%);
+    display: none;
   }
 
   .Main .beatMachine {
