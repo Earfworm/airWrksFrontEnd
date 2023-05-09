@@ -96,7 +96,9 @@ Main #container {
 
 #beatMachine-Container {
 }
-
+.Main #circle-container {
+  display: none;
+}
 .Main .beatMachine {
   display: flex;
   align-items: center;
@@ -195,7 +197,51 @@ Main #container {
   .Main #beatsRhymesCodeLife-container {
     display: none;
   }
+  .Main #circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
+  .Main body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .Main #circle {
+    position: relative;
+    width: 40%;
+    padding-bottom: 100%;
+    overflow: hidden;
+  }
+
+  .Main #circle text {
+    font-family: "Helvetica Neue", Arial;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .Main #circle svg {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
   .Main .beatMachine {
     right: 40.5%;
   }
