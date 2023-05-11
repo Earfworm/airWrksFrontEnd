@@ -15,7 +15,8 @@
 
 .App {
   height: 100vh;
-  background: repeating-linear-gradient(
+  background-color: #1b419e;
+  /* background: repeating-linear-gradient(
     45deg,
     #1b419e,
     #1b419e 5%,
@@ -23,5 +24,5 @@
     #3264e0 10%
   );
   background-size: 100px 100px;
-  animation: move-it 7s linear infinite;
+  animation: move-it 7s linear infinite; */
 }
