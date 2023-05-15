@@ -1,0 +1,51 @@
+.RotatingCircle {
+  display: none;
+}
+
+@media only screen and (min-width: 368px) {
+  .RotatingCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 60%;
+  }
+  .RotatingCircle body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .RotatingCircle #circle {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+  }
+
+  .RotatingCircle #circle text {
+    font-family: "Helvetica Neue", Arial;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .RotatingCircle #circle svg {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 105%;
+    height: 95%;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

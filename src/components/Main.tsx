@@ -1,4 +1,5 @@
 import "./Main.css";
+import RotatingCircle from "./RotatingCircle";
 
 const Main = () => {
   return (
@@ -11,7 +12,8 @@ const Main = () => {
           <span id="life-span">Life</span>
         </p>
       </div>
-      <div id="circle-container">
+      <RotatingCircle />
+      {/* <div id="circle-container">
         <div id="circle">
           <svg
             version="1.1"
@@ -51,7 +53,7 @@ const Main = () => {
             </g>
           </svg>
         </div>
-      </div>
+      </div> */}
       <div id="beatMachine-Container">
         <div className="beatMachine outerShell">
           <div className="innerShell">
