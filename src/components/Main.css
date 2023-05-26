@@ -192,6 +192,9 @@ Main #container {
 }
 
 @media only screen and (min-width: 368px) {
+  .Main {
+    height: 100vh;
+  }
   .Main #beatsRhymesCodeLife-container {
     display: none;
   }
