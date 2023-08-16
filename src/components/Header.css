@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #0094d8;
+  box-shadow: 10px 10px 5px 5px black;
   z-index: 1;
 }
 
@@ -65,6 +66,7 @@
   display: flex;
   padding: 5px;
   color: #f2f4f1;
+
   font-weight: 600;
   font-family: "Patrick Hand SC", cursive;
   transition: 0.3s ease-in-out;
